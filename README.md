@@ -21,4 +21,4 @@ A simple Tic-Tac-Toe game built with **React**, **JavaScript**, and **CSS**, fea
 ## Live Demo
 
 **Play the game here:**  
-[INSERT YOUR VERCEL LINK HERE]
+[Tic-Tac-Toe on Vercel](https://tic-tac-toe-react-game-zeta.vercel.app/)
