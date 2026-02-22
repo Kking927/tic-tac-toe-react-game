@@ -1,14 +1,15 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
+  padding: 20px; /* optional: adds breathing room around the whole page */
 }
 
 .board {
   display: grid;
   grid-template-columns: repeat(3, 80px);
-  gap: 5px;
+  gap: 10px; /* slightly bigger gap between squares */
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 25px; /* more space below the board */
 }
 
 .square {
@@ -16,9 +17,28 @@ body {
   height: 80px;
   font-size: 2rem;
   cursor: pointer;
+  border: 2px solid #333; /* optional: makes squares more defined */
+  border-radius: 8px; /* optional: rounded corners for style */
+  background-color: #f0f0f0; /* optional: subtle background color */
 }
 
 .status {
-  margin: 10px 0;
+  margin-bottom: 20px; /* space between status text and reset button */
   font-weight: bold;
+  font-size: 1.2rem; /* slightly larger for visibility */
+}
+
+#reset {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50; /* optional: green button */
+  color: white;
+  transition: background-color 0.2s;
+}
+
+#reset:hover {
+  background-color: #45a049; /* hover effect for button */
 }
