@@ -12,10 +12,11 @@ A simple Tic-Tac-Toe game built with **React**, **JavaScript**, and **CSS**, fea
 
 ## Built With
 
-- **React**  
-- **JavaScript (ES6+)**  
-- **CSS / Tailwind**  
-- **Vercel** for deployment
+- React
+- JavaScript
+- CSS
+- Vite
+- Vercel (deployment)
 
 ## Live Demo
 
