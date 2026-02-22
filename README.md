@@ -17,7 +17,7 @@ A simple Tic-Tac-Toe game built with **React**, **JavaScript**, and **CSS**, fea
 - **CSS / Tailwind**  
 - **Vercel** for deployment
 
-## 🎮 Live Demo
+## Live Demo
 
-👉 **Play the game here:**  
+**Play the game here:**  
 [INSERT YOUR VERCEL LINK HERE]
