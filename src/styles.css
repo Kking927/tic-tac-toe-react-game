@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.status {
+  margin: 10px 0;
+  font-weight: bold;
+}
