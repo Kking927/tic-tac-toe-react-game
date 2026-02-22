@@ -1,44 +1,90 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Courier New', monospace; /* retro blocky font */
   text-align: center;
-  padding: 20px; /* optional: adds breathing room around the whole page */
+  padding: 40px;
+  background-color: #222; /* dark background for retro arcade feel */
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff4500; /* bright retro orange */
+  text-shadow: 2px 2px #000; /* arcade-style glow */
+  margin-bottom: 30px;
 }
 
 .board {
   display: grid;
   grid-template-columns: repeat(3, 80px);
-  gap: 10px; /* slightly bigger gap between squares */
+  gap: 8px;
   justify-content: center;
-  margin-bottom: 25px; /* more space below the board */
+  margin-bottom: 30px;
+  border: 4px solid #555; /* thick retro border around board */
+  padding: 10px;
+  background-color: #e0e0c0; /* light retro beige background */
 }
 
 .square {
   width: 80px;
   height: 80px;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-family: 'Courier New', monospace;
   cursor: pointer;
-  border: 2px solid #333; /* optional: makes squares more defined */
-  border-radius: 8px; /* optional: rounded corners for style */
-  background-color: #f0f0f0; /* optional: subtle background color */
+  border: 3px solid #333; /* thick border for arcade look */
+  border-radius: 0; /* square corners for retro feel */
+  background-color: #f8f8f0; /* off-white background */
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.square:hover {
+  background-color: #ffd700; /* bright yellow hover */
+  transform: scale(1.05); /* small pop effect */
 }
 
 .status {
-  margin-bottom: 20px; /* space between status text and reset button */
+  margin-bottom: 25px; /* space between status text and reset button */
   font-weight: bold;
-  font-size: 1.2rem; /* slightly larger for visibility */
+  font-size: 1.5rem;
+  font-family: 'Courier New', monospace;
+  color: #ff4500; /* bright retro orange */
+  text-shadow: 1px 1px #000; /* glow effect */
 }
 
 #reset {
-  padding: 10px 20px;
-  font-size: 1rem;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
   cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  background-color: #4caf50; /* optional: green button */
-  color: white;
-  transition: background-color 0.2s;
+  border: 3px solid #333;
+  border-radius: 0; /* sharp corners for retro look */
+  background-color: #00bfff; /* retro blue button */
+  color: #fff;
+  text-shadow: 1px 1px #000;
+  transition: background-color 0.2s, transform 0.1s;
 }
 
 #reset:hover {
-  background-color: #45a049; /* hover effect for button */
+  background-color: #1e90ff; /* slightly darker blue on hover */
+  transform: scale(1.05);
+}
+
+/* Optional: responsive scaling for smaller screens */
+@media (max-width: 500px) {
+  .board {
+    grid-template-columns: repeat(3, 60px);
+    gap: 6px;
+    padding: 8px;
+  }
+
+  .square {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  #reset {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
 }
