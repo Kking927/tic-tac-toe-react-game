@@ -14,7 +14,6 @@ A simple Tic-Tac-Toe game built with **React**, **JavaScript**, and **CSS**, fea
 
 - React
 - JavaScript
-- CSS
 - Vite
 - Vercel (deployment)
 
