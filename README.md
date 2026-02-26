@@ -8,7 +8,6 @@ A simple Tic-Tac-Toe game built with **React**, **JavaScript**, and **CSS**, fea
 - Player turns: X and O
 - Win and draw detection
 - Reset button to start a new game
-- Responsive layout
 
 ## Built With
 
